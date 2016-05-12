@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title></title>
+		<style>
+		body{
+			font-family: 'Montserrat', sans-serif;
+		}
+
+		nav{
+			margin: auto 0;
+			background-color: #080707;
+			position: fixed;
+			height: 48px;
+			width: 100%;
+			right: 0;
+			left: 0;
+			top: 0;
+			border-bottom: solid #f3c8ba;
+			-webkit-box-shadow: 1px 1px 1px 1px #d9d9d9;
+			box-shadow: 1px 1px 1px 1px #d9d9d9;
+			z-index: 999;
+
+		}
+		#logo{
+			float: none;
+			position: fixed;
+			margin-top: 32px;
+			position:fixed; top:-11%;
+			z-index: 999;
+
+		}
+
+		#toplinks{ 
+
+			position:fixed; top:-1%; left:24%; 
+			z-index: 999;
+		}
+
+
+		li {
+				display: inline;
+				position: relative;
+				float: left;
+				border-right:1px solid rgba(255, 255, 255, 0.2);
+				margin:auto 0;
+				text-transform: uppercase;
+    			font-weight: bold;
+    			margin-top: 7px;
+    			font-size: 13px;
+    			
+
+			}
+
+        	a:link{
+       			text-decoration: none;
+       			color: white;
+       		}
+
+		 	li a:hover{
+        		background-color:pink;
+        		color: black
+        	}
+
+       		li a{
+       			padding: 14px;
+       		}
+        		
+		#container{
+			margin: 4.8% 25% 0% 15%;
+			/*background-color: red;*/
+			width: 1000px;
+			height: 100%;
+			}
+
+		#pic1{
+			/*background-color: green;*/
+			margin: auto 0;
+			width: 100%;
+			height: 514px;
+
+		}
+
+		#header1{
+			background-color: rgba(0, 0, 0,0.6);
+			margin: auto 0;
+			width: 100%;
+			height: 81px;
+    		margin-top: -145px;
+    		color: white;
+    		font-weight: bolder;
+    		text-transform: uppercase;
+    		font-size: 35px;
+    		position: relative;
+    		z-index: 600;
+    	
+		}
+
+
+		.rule{
+			border-bottom: solid 1px rgb(0, 0, 0);
+			width: 100%;
+			margin-top: 40px;
+		}
+
+		.article{
+			/*background-color: yellow;*/
+			width: 68%;
+			height: 442px;
+			text-transform: uppercase;
+			font-weight: bolder;
+			font-size: larger;
+			margin-top: 10px;
+			padding-bottom: 23px;
+		}
+
+		.link{
+			color: black;
+			font-size: xx-small;
+		}
+		
+		.author{
+			font-size: 9.5px;
+    		text-transform: uppercase;
+   			font-weight: normal;
+   			margin-top: 8px;
+		}
+
+		.ad{
+			background-color: blue;
+			height: 442px;
+			width: 30%;
+			float: right;
+    		margin-top: -465px;
+		}	
+
+		.text{
+			font-weight: normal;
+			font-size: 12px;
+			text-transform: none;
+		}
+
+		#ar2{
+
+			margin-top: 84px;
+
+		}
+
+
+		@media only screen and (max-width: 768px){
+				nav{min-height: 48px}
+				body{/*background-color: pink*/;max-width: 667px;}
+				#container{margin:auto 0;max-width:667px}
+				#logo{margin: 32px 75px 0 110px;}
+				#mw1{ margin: 0 0 0 -21px}
+				#toplinks{display: none;}
+				#pic1{max-width: 361px; max-height: 185px; margin: 74px 0;}
+				#header1{max-width: 361px;font-size: 22.5px;margin-top: -146px; height: 73px;}
+				.rule{ margin-top: 12px;min-width: 100%;}
+				.article{margin-top:18px;max-width: 361px; font-size: 30px;margin-bottom: 32px;padding-bottom: 85px;}
+				.link{padding-bottom: 20px;}
+				a{margin-top: 20px;}
+				#pic2{margin-top: 20px;}
+				#r2{padding-top: 40px;}
+				.ad{margin: -55px 0 0 23px; width: 320px;height: 50px;float: left; position: absolute;}
+				#a2{margin-top: -18px;}
+
+				}
+
+		</style>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+	</head>
+		<body>
+			<nav></nav>
+			<div id="container">
+				<div id="logo"><img src="logo.png" style="height:41px; margin-top:52px;" id="mw1"></div>
+
+				<div id="toplinks">
+					<ul>
+						<li><a href="www.google.com">Drooling</a></li>
+						<li><a href="www.google.com">Need This</a></li> 
+						<li><a href="www.google.com">Star Struck</a></li>
+						<li><a href="www.google.com">Dont Judge</a></li> 
+					</ul>
+				</div> 
+
+				<div id="pic1">
+					<a href="www.google.com"><img src="pic1.jpg" style="width:100%; height:100%"></a>
+				</div>
+				<div id="header1">
+					<p>Kendall flaunts her hoodie while hiking in Malibu!</p>
+				</div>
+
+				<div class="rule"></div>
+
+				<div class="article">
+					AWW! Beyonce's Anniversary Present to Jay Z is Beyond Adorable!
+					<br>
+					<a href="www.google.com"><span class="link">NEED THIS</span></a>
+				<p class="author">by Alain Goldman Apr, 05th 3pm</p>
+					<a href="www.google.com">
+					<img src="beyonce.jpg" style="width:100%">	
+					</a>
+					<p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. 
+					Curabitur sodales ligula in libero. Sed dignissim lacinia nunc.<a href="www.google.com"><span class="link"><b>More</b></span></a></p>
+
+					<div class="rule"></div>
+
+				</div>
+				
+				<div class="ad"></div>
+				<!-- <div class="rule"></div> -->
+
+				<div class="article" id="ar2">
+					Chris Brown Couldn't Resist Commenting This on Karrueche's Instagram!
+					<br>
+					<a href="www.google.com"><span class="link">NEED THIS</span></a>
+				<p class="author">by Alain Goldman Apr, 05th 3pm</p>
+					<a href="www.google.com">
+					<img src="chris.jpg" style="width: 100%;">
+					</a>
+
+					<p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. 
+					Curabitur sodales ligula in libero. Sed dignissim lacinia nunc.<a href="www.google.com"><span class="link"><b>More</b></span></a></p>
+
+					<div class="rule" id="r2"></div>
+				</div>
+
+				<div class="ad" id="a2"></div>
+
+				<!-- <div class="rule" id="r2"></div> -->
+				<!-- Chris Brown Couldn't Resist Commenting This on Karrueche's Instagram!
+					<br>
+					<a href="www.google.com"><span class="link">NEED THIS</span></a>
+				<p class="author">by Alain Goldman Apr, 05th 3pm</p> -->
+				<div class="article" id="ar2">
+					<img src="madonna.jpg" style="width: 100%;" id="pic2">
+				</div>
+
+			
+			</div>
+
+		</body>
+</html>
