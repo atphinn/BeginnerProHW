@@ -1,0 +1,61 @@
+/*CSS
+*/
+{margin: 0; padding: 0;}
+
+body{
+	background-image: url("ME1.jpg");
+	height: 100vh; /*//viewable height*/
+ 	/*background-size:cover;*/
+ 	z-index:800;
+}
+
+/*#container{
+background-image: url("ME1.jpg");
+	height: 100vh; //viewable height
+ 	background-size:cover;
+ 	z-index:800;
+}*/
+
+
+#box{
+	/*background-color: red;*/
+	height: 100px;
+	width: 100px;
+	position: absolute;
+	float: left;
+	/*z-index:800;*/
+	margin: 571px 0 0 100px;
+}
+
+
+
+#obstacle{
+	float: right;
+	position: absolute;
+	margin-top: 585px;
+	/*margin-right: -19px;*/
+	/*margin-left: 1020px;*/
+	/*height: 100px;*/
+	
+}
+
+#ninja{
+	height: 100px;
+	width: 100px;
+}
+
+
+#grass{
+	background-image: url("Land.png");
+	width: 100%;
+	height: 101px;
+	position: absolute;
+	margin: 644px 0 0 0;
+}
+
+/*#buildings{
+	background-image: url("Build.jpg");
+	width: 100%;
+	height: 250px;
+}
+*/

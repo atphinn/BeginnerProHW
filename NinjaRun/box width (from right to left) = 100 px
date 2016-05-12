@@ -1,0 +1,25 @@
+box width (from right to left) = 100 px
+
+box right side location = 200px 
+
+jump height = top -190 (from intital position)
+
+var ninjaWidth = 100
+var ninjaRight = 200
+var ninjaJump = -190
+var ninjaHeight = 100
+var ninjaStar = $("#obstacle").offset().left 
+
+
+var boxLocation = $("#obstacle").offset().left
+var boxJump = $("#obstacle").offset().top
+var playerRightside = 200
+Var boxHeight = -168
+
+if (boxLocation <= playerRightside){
+	 console.log(".hit");
+}
+
+else if (boxHeight <= boxjump);{
+	console.log("hit");
+}
