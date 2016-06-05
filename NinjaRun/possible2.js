@@ -89,7 +89,7 @@ var boxWidth = 100
 }
 
 else if (boxLocation == boxWidth );{
-	if (playerBottom )
+	// if (playerBottom )
  	console.log("safe");
 }
 

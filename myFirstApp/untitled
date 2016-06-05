@@ -1,0 +1,22 @@
+         <StatusBar barStyle="light-content"/>
+         <Image source = {require('./logogreen.png')} style={styles.logo} />
+        <Text style={styles.typeA}>
+          BYOP
+        </Text> 
+         <Text style={styles.typeD}> Me@mail.com </Text>  
+        <View style={{borderBottomColor: '#ffffff', borderBottomWidth: 1, width:350, }}>
+               
+        </View>  
+         <Text style={styles.typeD}> *********** </Text>
+        <View style={{borderBottomColor: '#ffffff', borderBottomWidth: 1, width:350, }}>
+        
+        </View>
+        <Text style={styles.typeB}>forgot password?</Text> 
+
+         <TouchableHighlight onPress={this.touchedMe.bind(this)} underlayColor="transparent">
+        
+          <View style={styles.button}>
+            <Text>{this.state.touched}</Text>
+          </View>
+        </TouchableHighlight>
+        {htmlMessage}

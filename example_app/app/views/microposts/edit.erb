@@ -1,0 +1,14 @@
+
+<h3>New Tweet</h3>
+
+<%= form_for @micropost do |f| %>
+
+	<%=  f.label :message %><br>
+	<%=  f.text_field :message %><br>
+
+	<%=  f.label :email %><br>
+	<%=  f.text_field :email, placeholder: "do it" %><br>
+
+	<%=  f.submit "update"%>
+	<br><br>
+	<% end %>

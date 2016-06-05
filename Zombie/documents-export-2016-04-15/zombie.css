@@ -1,0 +1,63 @@
+/*CSS*/
+*{margin: 0; padding: 0;}
+
+body{
+
+	/*background-color: yellow;*/
+	height: 100vh; /*//viewable height*/
+ 	background-size:cover;
+ 	background-image: url("Sky.png");
+}
+
+#container{
+	/*background-color: yellow;*/
+	width: 100%;
+	height: 100vh;
+	background-image: url("Clouds.png");
+	z-index:800;
+}
+
+
+
+#grass{
+	background-image: url("Land.png");
+	width: 100%;
+	height: 101px;
+	position: absolute;
+	margin: -43px 0 0 0;
+}
+
+#mountaina{
+	background-image: url("MountainA.png");
+	width: 100%;
+	height: 250px;
+}
+
+#mountainb{
+	background-image: url("Mountainb.png");
+	width: 100%;
+	height: 105px;
+	position: relative;
+	margin-top: -100px;
+}
+
+#zombie{
+	float: right;
+	position: relative;
+	margin-top:-183px;
+}
+
+#missle{
+	float: left;
+	position: relative;
+	margin-top:-120px;
+	margin-left: -183px;
+}
+
+#explode{
+	float: right;
+	position: relative;
+	margin-top:-183px;
+
+}
+

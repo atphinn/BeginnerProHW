@@ -1,0 +1,10 @@
+<h3>All Tweets</h3>
+
+<% @microposts.each do |x| %>
+		<b>
+			<%= x.email %>
+		</b>
+		:
+		<%= x.message %>
+		<br>
+	<% end %>
