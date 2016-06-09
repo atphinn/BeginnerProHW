@@ -23,9 +23,6 @@
     .westSide
       .blueText
         Event details
-        - flash.each do |key, value|
-          %h5{:class => key}
-            = value
       = f.text_field :title, placeholder: "Title of Event"
       = text_field_tag :location, nil, placeholder: "Location"
       %div

@@ -1,3 +1,4 @@
+
 @import url(https://fonts.googleapis.com/css?family=Roboto+Condensed);
 @import url(https://fonts.googleapis.com/css?family=Dosis:400,200);
 *{margin:0;padding:0;}
@@ -353,3 +354,31 @@ input.shorter{
 	-moz-border-radius: 5px;
 	border-radius: 5px;
 }
+
+
+.forgot-error, .reg-error {
+width: 400px;
+height: 50px;
+font-size: 15px;
+color: red;
+margin-left: 51px;
+display: inline-block;
+margin-top: -3%;
+}
+
+.forgot-error h2, .reg-error h2 {
+font-size: 18px;
+}
+
+.forgot-error ul li, .reg-error ul li {
+margin-left: 5%;
+}
+
+.registerboxleft form {
+margin-top: 15px;
+}
+
+.reg-error {
+margin-left: 38px;	
+}
+

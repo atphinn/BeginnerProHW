@@ -5,14 +5,14 @@ class EventsController < ApplicationController
 	end
 
 	def create
-		@event = Event.new(permit_event)
-		@event.user_id = current_user.id
+			@event = Event.new(permit_event)
+			@event.user_id = current_user.id
 		if @event.save
-		redirect_to event_path(@event)
-	else
-		flash[:red] = @events.errors.full_messages
-		render "new"
-	end
+			redirect_to event_path(@event)
+		else
+			flash[:red] = @event.errors.full_messages[0]
+			render "new"
+		end
 	end
 
 	def index
@@ -27,13 +27,29 @@ class EventsController < ApplicationController
 
 	def destroy
 		@event = Event.find(params[:id])
-		if @event.user_id == current_user_id@event.delete
-		redirect_to events_path
+		if @event.user_id == current_user.id
+			@event.delete
+			redirect_to events_path
 		else
-		flash[:red] = "You cannot delete this event"
-		redirect_to events_path
+			flash[:red] = "You cannot delete this event"
+			redirect_to events_path
 		end	
 	end
+
+	def edit
+		@event = Event.find(params[:id])
+	end
+
+	def update
+		@event = Event.find(params[:id])
+		if @event.update_attributes(permit_event)
+			flash[:green] = "Event updated!"
+			redirect_to event_path(@event)
+		else
+			flash[:red] = @event.errors.full_messages.first
+			redirect_to event_path
+		  end
+end
 
 	private
 
