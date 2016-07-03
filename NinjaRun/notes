@@ -1,0 +1,78 @@
+ // 	var boxLocation = $("#obstacle").offset().left;
+ // 	//var boxLocationbottom = $("#obstacle").offset().top;
+ // if (boxLocation <= playerRightside){
+ // // alert("You lose");
+ // 	 //deathAnimation();
+ // 	 console.log(".hit")
+	// 	}
+
+
+
+	// var deathArray= ['0','1','2','3'];
+	// var fall = 0;
+
+
+	// function deathAnimation(){
+
+	// $(document).ready(function(){
+	// 	function dead(){
+	// 		if (fall>= deathArray.length){fall=0;}
+	// 		$('#ninja').attr('scr', 'death' + deathArray[fall] + 'png');
+	// 		fall++;
+	// 	};
+	// 	setInterval(dead, 200);
+	// });
+	
+	// };
+
+// 	function isCollide(a, b) {
+//     return !(
+//         ((a.y + a.height) < (b.y)) ||
+//         (a.y > (b.y + b.height)) ||
+//         ((a.x + a.width) < b.x) ||
+//         (a.x > (b.x + b.width))
+//     );
+// }
+
+// function rect(obj) {
+//   return {
+//     x : parseInt($(obj).css('left')),
+//     y : parseInt($(obj).css('top')),
+//     width : $(obj).width(),
+//     height : $(obj).height()
+//   }
+// }
+
+// var a = rect("#ninja");
+// var b = rect("#obstacle");
+
+// console.log(isCollide(a, b));
+
+
+// if the ninja center is less then the suriken height and the suriken is 50px pass the  
+
+
+var centerX = offset.left + width / 2;
+var centerY = offset.top + height / 2;
+
+
+
+if ninja center is x and shuriken center is y then there is a colision if not equal then there is no collision
+
+
+
+
+
+var boxLocation = $("#ninja").offset().left
+var boxJump = $("#ninja").offset().top
+
+var ninjaCenterX = $("#ninja").offset().left + width / 2;
+var ninjaCenterY = $("#ninja").offset().top + width / 2;
+
+function gameOver(){
+
+	if (starCenterX && starCenterY) <= ()
+}
+
+
+

@@ -24,7 +24,7 @@ background-image: url("ME1.jpg");
 	position: absolute;
 	float: left;
 	/*z-index:800;*/
-	margin: 571px 0 0 100px;
+	margin: 571px 0 0 200px;
 }
 
 
@@ -32,7 +32,7 @@ background-image: url("ME1.jpg");
 #obstacle{
 	float: right;
 	position: absolute;
-	margin-top: 585px;
+	margin-top: 550px;
 	/*margin-right: -19px;*/
 	/*margin-left: 1020px;*/
 	/*height: 100px;*/
@@ -59,3 +59,8 @@ background-image: url("ME1.jpg");
 	height: 250px;
 }
 */
+
+#star{
+	height: 100px;
+	width: 100px;
+}

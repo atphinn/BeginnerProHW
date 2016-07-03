@@ -7,11 +7,9 @@ $(document).keypress(function(e){ x = String.fromCharCode(e.which);
 			 // alert(x);
 			 // console.log(x)
 			if(x == "w"){
-				$('div#box').animate({"top": -200},500).delay(30).animate({"top": 10},500);
-}
-			
-				
-		});
+				$('div#box').animate({"top": -200},500).delay(35).animate({"top": 10},1000);
+}					
+			});
 
 //Running Animation
 
@@ -26,28 +24,23 @@ var arrayimg = [ '0', '1', '2', '3'];
 				i++; //cycle to next image;
 			}
 		setInterval(cyclex, 100);
-})
+});
 
 
 // Ninja star animation
- var playerRightside = 200;
- // var playerBottom = -200;
+ 
  $(document).ready(function(){
  	function ninjaLoop(){
-           $('#obstacle').css({marginLeft: '1520px'}).animate({ marginLeft: '-100px'},3000, ninjaLoop);
-      		
+           $('#obstacle').css({marginLeft: '1620px'}).animate({ marginLeft: '-100px'},3000, ninjaLoop);		
        }
-
       ninjaLoop();
       // console.log("test")  
-      
         });
 
 //colision
 
 
-	console.log($('#star').offset().left);
-
+//console.log($('#star').offset().left);
 
 var starArray = [ '0', '1'];
 var shuriken = 0; //your starting image
@@ -62,57 +55,33 @@ var shuriken = 0; //your starting image
 });
 
 
-
-		
-	
  //Background Movement
 var moveBackground = function(){
 	$('body').animate({'background-position-x': '-=21px'}, 500, 'linear');
  	$('#grass').animate({'background-position-x' : '-=50px'}, 400, 'linear');
 
+			//Hit detection
 
- // 	var boxLocation = $("#obstacle").offset().left;
- // 	//var boxLocationbottom = $("#obstacle").offset().top;
- // if (boxLocation <= playerRightside){
- // // alert("You lose");
- // 	 //deathAnimation();
- // 	 console.log(".hit")
-	// 	}
-var boxLocation = $("#obstacle").offset().left
-// var boxJump = $("#obstacle").offset().top
-var playerRightside = 200
-// var playerBottom = 100
-var boxWidth = 100
+			// var playerRightside = document.querySelectorAll("img#ninja");
+			var playerRightside = 200;
+ 			var playerBottom = $("#ninja").offset().top;
+			var boxLocation = $("#star").offset().left;
+			 var boxJump = $("#star").offset().top;
+			
 
-	if (boxLocation <= playerRightside ){
-	 console.log(".hit");
-}
+				if (boxLocation <= playerRightside && boxJump <= playerBottom){
+				 alert("Game Over");
+			    }
 
-else if (boxLocation == boxWidth );{
-	// if (playerBottom )
- 	console.log("safe");
-}
+				else (boxJump <= playerBottom);{
+			 	console.log("safe");
+			}
+
+
+
 
  };
 
 
-
-
-	// var deathArray= ['0','1','2','3'];
-	// var fall = 0;
-
-
-	// function deathAnimation(){
-
-	// $(document).ready(function(){
-	// 	function dead(){
-	// 		if (fall>= deathArray.length){fall=0;}
-	// 		$('#ninja').attr('scr', 'death' + deathArray[fall] + 'png');
-	// 		fall++;
-	// 	};
-	// 	setInterval(dead, 200);
-	// });
-	
-	// };
 
  var timeOut3 = setInterval(moveBackground, 100);
