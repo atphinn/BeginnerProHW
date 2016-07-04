@@ -1,7 +1,10 @@
 !!!
 %html
   %head
-  	 
+    %script{:src => "https://js.stripe.com/v2/", :type => "text/javascript"}
+    / add your publishable key
+    :javascript
+      Stripe.setPublishableKey('pk_test_alUUpwzakw5HBLIJi6gwiXcb');
     %title Fit
     = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true
     = javascript_include_tag 'application', 'data-turbolinks-track' => true

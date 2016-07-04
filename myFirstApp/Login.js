@@ -27,10 +27,10 @@ class Login extends Component {
     }
   }
 
-  linker(comp){
-      this.props.navigator.push({
-        component: comp
-      });
+  // linker(comp){
+  //     this.props.navigator.push({
+  //       component: comp
+  //     });
 }
   
 
