@@ -45,7 +45,7 @@
 .loginbox {
   width: 500px;
   text-align: center;
-  margin-top: 9%; }
+  margin-top: 4%; }
 
 .forgotbox {
   width: 500px;
@@ -209,12 +209,12 @@
 
 .downloadapp {
   text-align: center;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
   width: 370px;
+  height: 50px;
   padding-top: 2%; }
   .downloadapp p {
-    padding-bottom: 20px; }
+    padding-bottom: 0px; }
   .downloadapp .apple {
     float: left; }
   .downloadapp .google {
