@@ -1,0 +1,16 @@
+= render "layouts/sidebar"
+#right
+  = render "layouts/hamburger"
+  .imageSection
+    = image_tag @event.cover.url
+    .gradient
+      %span
+        = @event.title
+  %h3
+    description:
+    = @event.description
+    %br
+    price:
+    = number_to_currency(@event.price)
+     = link_to "Delete", event_path(@event), method: :delete, data: { confirm: "Are you sure you want to delete this event?"}
+     = link_to "Purchase this class!!!", payment_path(@event.id)

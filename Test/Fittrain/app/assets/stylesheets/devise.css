@@ -1,0 +1,339 @@
+a{
+    text-decoration: none !improtant;
+}
+
+#bar{
+background-color: black;
+width: 100%;
+height: 18px;
+float: left;
+}
+
+
+.loginpage{
+    padding-top:40px;
+	background-image:   
+		linear-gradient(
+      rgba(255, 255, 255, 0.65), 
+      rgba(255, 255, 255, 0.65)
+    ),url('/assets/sign.jpg');
+	height: 100vh;
+	background-size:cover;
+
+}
+
+
+
+.password{
+background-image:   
+linear-gradient(
+  rgba(255, 255, 255, 0.65), 
+  rgba(255, 255, 255, 0.65)
+),url('/assets/password.jpg');
+height: 100vh;
+background-size:cover;
+
+}
+
+.register{
+background-image:   
+linear-gradient(
+  rgba(255, 255, 255, 0.65), 
+  rgba(255, 255, 255, 0.65)
+),url('/assets/register.jpg');
+height: 100vh;
+background-size:cover;
+}
+
+
+.field{
+    margin: 0 0 0 51px;
+	padding-top: 24px;
+
+}
+
+.titlem{
+   margin: 98px 0 0 500px;
+    padding-bottom: 0px;
+    text-transform: uppercase;
+}
+
+.titlem2{
+   margin-left: 496px;
+    padding-bottom: 0px;
+    text-transform: uppercase;
+    font-weight: 300;
+    color: rgb(155,155,155);
+    
+}
+
+.title{
+    margin-left: 496px;
+    padding-top: 136px;
+	text-transform: uppercase;
+}
+
+.title2{
+	margin-left: 496px;
+	text-transform: uppercase;
+    font-weight: 300;
+    color: rgb(155,155,155);
+}
+
+.loginbox{
+    background-color: white;
+    width: 377px;
+    height: 335px;
+    padding-top: 24px;
+    margin: 28px auto;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+   
+}
+
+.loginbox2{
+    background-color: white;
+    width: 312px;
+    height: 336px;
+    position: absolute;
+    padding-top: -39px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    margin: 46px 0 0 393px;
+    padding-right: 32px;
+}
+
+
+#loginboxR{
+    background-color: white;
+    width: 665px;
+    height: 487px;
+    position: absolute;
+    padding-top: -39px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    margin: 120px auto 0px 292px;
+    /* padding-top: 17px; */
+}
+
+
+.signinbtn{
+	background-color: black;
+	color:white;
+	border-radius; 
+	padding:12px;
+	border-radius: 1px;
+	border-color: black;
+	-webkit-border-radius: 500px;
+	-moz-border-radius: 500px;
+	border-radius: 500px;
+    width: 251px;
+    margin: 26px 0 0 62px;
+    font-size: 13px;
+    height: 45px;
+    font-weight: 100;
+}
+
+.signinbtn2{
+    background-color: black;
+    color:white;
+    border-radius; 
+    padding:12px;
+    border-radius: 1px;
+    border-color: black;
+    -webkit-border-radius: 500px;
+    -moz-border-radius: 500px;
+    border-radius: 500px;
+    width: 251px;
+    margin: 0 34px;
+    font-size: 13px;
+    height: 45px;
+    font-weight: 100;
+    float: right;
+}
+
+#trainer_email{
+    width: 266px;
+    height: 38px;
+}
+
+#trainer_password{
+    width: 266px;
+    height: 38px;
+}
+
+#signheadding{
+    font-family: Verdana, sans-serif;
+    margin: 0 0 0 51px;
+    font-weight: 400;
+    font-size: medium;
+    padding-bottom: 5px;
+}
+
+.forgotpass{
+	text-decoration: none;
+	margin: 16px 0 0 147px;
+	font-size: 12px;
+	color: rgb(111,158,219);
+}
+
+
+#appdload{
+	margin: 30px 0 0 70px;
+    padding-bottom: 30px;
+	font-size: 11px;
+    font-weight: 500;
+}
+
+#applink{
+	margin: 44px 0 0 1px;
+	font-size: 12px;
+	text-decoration: none;
+	font-weight: bold;
+	color: rgb(105,159,222);
+}
+
+#itunes{
+	margin: 25px 0 0 32px;
+}
+
+#driod{
+	margin: -42px 42px 0 0;
+	float: right;
+}
+
+#btmtitle{
+    margin: 21px 0 0 174px;
+    color: rgb(155,155,155);
+    font-size: larger;
+}
+
+#copyright{
+	margin: 6px 0 0 142px;
+    font-size: 6px;
+}
+
+#forgot{
+    font-size: 18px;
+    margin: 29px 0px 0 35px;
+    padding-bottom: 23px;
+    font-weight: 400;
+}
+
+.instruct{
+    font-size: 10px;
+    margin: 0px 0 0 35px;
+    font-weight: lighter;
+}
+
+#p2{
+    margin: -31px 0 45px 35px;
+
+}
+
+#c2{
+    margin: 148px 0 -7px 131px;
+    color: rgb(155,155,155);
+    font-size: 16px;
+}
+
+
+#c3{
+    margin: 13px 0 0 83px;
+    font-size: 9px;
+
+}
+
+#c4{
+    margin: 182px 0 -7px 329px;
+    color: rgb(155,155,155);
+    font-size: 16px;
+}
+
+
+#c5{
+    margin: 13px 0 0 277px;
+    font-size: 9px;
+
+}
+
+#p3{
+    margin: 0 0 0 526px;
+    padding-top: 133px;
+}
+
+#p4{
+    margin: 0 0 0 522px;
+    text-transform: uppercase;
+    font-weight: 300;
+    color: rgb(155,155,155)
+}
+
+#registitle{
+    font-size: 18px;
+    margin: 28px 0 0 26px;
+}
+
+.f2{
+    margin: 29px 0 -11px 26px;
+}
+
+#vertline{
+    height: 280px;
+    background-color: rgb(209, 209,209);
+    width: 3px;
+    margin: -282px 0 0 336px;
+}
+
+#jump{
+    font-size: 12px;
+    float: right;
+    margin: 62px -200px 0 0px;
+    text-decoration: none;
+}
+
+#j2{
+text-decoration: none;
+}
+
+#copy{
+    float: right;
+    margin: -256px 38px 0 0;
+}
+
+#r3{
+    font-size: 70px;
+    font-weight: normal;
+    text-align: center;
+    margin: -16px 36px 0px 0;
+}
+
+#r4{
+    font-size: 24px;
+    /*font-weight: normal;*/
+    text-align: center;
+    color: rgb(155,155,155);
+    margin: -5px 35px 0px 0;
+    font-weight: 200;
+    padding-bottom: 40px;
+}
+
+#letting{
+    font-size: 12px;
+    text-align: center;
+    margin: 0 19px 0 0;
+}
+
+#linksign{
+    font-size: 12px;
+    margin: 68px 0px -63px 412px;
+}
+
+.clientslist{
+    background-color: black;
+    height: 100vh;
+    width: 200px;
+}

@@ -1,0 +1,11 @@
+= render "layouts/sidebar"
+#right
+  = render "layouts/hamburger"
+  = render "layouts/top", :top => "Payment"
+
+
+ 
+  #payment
+  #paybox
+    %p Debit Card information
+    = text_field_tag :email, nil, placeholder: "Email", input_html: {maxlength: 50, size: 300}

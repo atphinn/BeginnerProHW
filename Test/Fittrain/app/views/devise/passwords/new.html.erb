@@ -1,0 +1,32 @@
+<div id="bar"></div>
+
+<div class="password">
+	<div id="sitename">
+    <h1 id="p3">FIT</h1>
+   </div> 
+  <h5 id="p4">Trainer</h5>
+	<div class="loginbox2">
+		<p id="forgot">Forgot your password?</p>
+		<p class="instruct">Please provide the email address that you used when you signed up.</p>
+		<br>
+		<p class="instruct">We will send you an email that will allow you to reset your password</p>
+		<br>
+		<%= form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :post }) do |f| %>
+		  <%= devise_error_messages! %>
+
+	  <div class="field" id="p2">
+	    
+	    <%= f.email_field :email, autofocus: true %>
+	  </div>
+
+	  <div class="actions">
+	    <%= f.submit "Reset Password" , class: "signinbtn", style: "
+    margin: -16px 0 0 46px; width: 243px"%>
+	  </div>
+	<% end %>
+
+      <div id="c2" >FIT</div>
+      <div id="c3">&copy; FIT app, All rights reserved</div> 
+	
+	</div>
+</div>
