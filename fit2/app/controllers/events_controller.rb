@@ -16,10 +16,14 @@ class EventsController < ApplicationController
 	end
 
 	def index
-		@events = Event.where(user_id: current_user.id)
-		# right now this says all events
-		# make it so that it only gets the events that belongs to the current user logged in
-	end
+		@events = Event.all
+		respond_to do |format|
+		  format.html{}
+		  format.json { 
+		  	render json: @events.as_json(only: [:id, :title, :description, :price])
+		  }
+         end
+     end
 
 	def show
 		@event = Event.find(params[:id])
@@ -50,6 +54,28 @@ class EventsController < ApplicationController
 			redirect_to event_path
 		  end
 end
+
+def payment
+		@event = Event.find(params[:id])
+	end
+
+	def sendpayment
+  		@event = Event.find(params[:id])
+		token = params[:stripeToken]
+		begin
+		  charge = Stripe::Charge.create(
+		    :amount => (@event.price * 100).to_i,
+		    :currency => "usd",
+		    :source => token,
+		    :description => @event.title
+		  )
+		rescue Stripe::CardError => e
+		    flash[:red] = "error"
+			redirect_to event_path(@event)
+		end  
+		flash[:green] = "Purchase complete"
+		redirect_to event_path
+    end
 
 	private
 
