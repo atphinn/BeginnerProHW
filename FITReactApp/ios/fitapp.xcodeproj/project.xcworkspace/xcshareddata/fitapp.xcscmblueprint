@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "BF9A410B7EF7FBCC152B3FF18BD4A16C19B9AF05",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "BF9A410B7EF7FBCC152B3FF18BD4A16C19B9AF05" : 0,
+    "D6E230E92DC5A571C71579781627D88A3CE9C2F2" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "025ED01F-E222-4CFA-BF6D-18F884397D79",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "BF9A410B7EF7FBCC152B3FF18BD4A16C19B9AF05" : "FIT-react-native\/",
+    "D6E230E92DC5A571C71579781627D88A3CE9C2F2" : ""
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "fitapp",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "ios\/fitapp.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/b-glaze\/FIT-react-native.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "BF9A410B7EF7FBCC152B3FF18BD4A16C19B9AF05"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/alaingoldman\/fit.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "D6E230E92DC5A571C71579781627D88A3CE9C2F2"
+    }
+  ]
+}
