@@ -5,8 +5,8 @@ class EventsController < ApplicationController
 	end
 
 	def create
-			@event = Event.new(permit_event)
-			@event.user_id = current_user.id
+		@event = Event.new(permit_event)
+		@event.user_id = current_user.id
 		if @event.save
 			redirect_to event_path(@event)
 		else
@@ -18,12 +18,12 @@ class EventsController < ApplicationController
 	def index
 		@events = Event.all
 		respond_to do |format|
-		  format.html{}
-		  format.json { 
-		  	render json: @events.as_json(only: [:id, :title, :description, :price])
-		  }
-         end
-     end
+			format.html{}
+			format.json { 
+				render json: @events.as_json(only: [:id, :title, :description, :price])
+			}
+		end
+	end
 
 	def show
 		@event = Event.find(params[:id])
@@ -52,34 +52,34 @@ class EventsController < ApplicationController
 		else
 			flash[:red] = @event.errors.full_messages.first
 			redirect_to event_path
-		  end
-end
+		end
+	end
 
-def payment
+
+	def payment
 		@event = Event.find(params[:id])
 	end
 
 	def sendpayment
-  		@event = Event.find(params[:id])
+		@event = Event.find(params[:id])
 		token = params[:stripeToken]
 		begin
-		  charge = Stripe::Charge.create(
-		    :amount => (@event.price * 100).to_i,
-		    :currency => "usd",
-		    :source => token,
-		    :description => @event.title
-		  )
+			charge = Stripe::Charge.create(
+				:amount => (@event.price * 100).to_i,
+				:currency => "usd",
+				:source => token,
+				:description => @event.title
+				)
 		rescue Stripe::CardError => e
-		    flash[:red] = "error"
+			flash[:whoops] = "error"
 			redirect_to event_path(@event)
 		end  
-		flash[:green] = "Purchase complete"
+		flash[:success] = "Purchase complete"
 		redirect_to event_path
-    end
-
+	end
 	private
 
-		def permit_event
-			params.require(:event).permit(:title, :description, :price, :time, :cover, :confirm)
-		end
+	def permit_event
+		params.require(:event).permit(:title, :description, :price, :time, :cover, :confirm)
+	end
 end
